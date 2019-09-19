@@ -4,6 +4,7 @@
   background: inherit;
   color: #fff;
   margin: 0 auto;
+
   svg {
     position: absolute;
     bottom: 0vh;
@@ -76,23 +77,24 @@
   animation: gradientBG 15s ease infinite;
   font-size: $medium-font-size;
 
-&__icon {
+  &__icon {
     font-size: 40px;
     position: absolute;
     animation: moveDown 500ms linear infinite;
+
     &:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
   }
 
   &__logo {
-   font-size: 200px;
-   background: linear-gradient(45deg, #000000, #ffffff, #000000);
-   background-size: 400% 400%;
-   background-clip: text;
-   -webkit-background-clip: text;
-   color: transparent;
-   animation: gradientBG 6s ease-out infinite;
+    font-size: 200px;
+    background: linear-gradient(45deg, #000000, #ffffff, #000000);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientBG 6s ease-out infinite;
   }
 
   &__header {
@@ -104,11 +106,13 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: gradientBG 10s ease infinite;    
+    animation: gradientBG 10s ease infinite;
+
     &--second {
-            &:before {
+      &:before {
         content: " // ";
       }
+
       &:after {
         content: " // ";
       }
@@ -120,9 +124,11 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -132,17 +138,22 @@
   from {
     bottom: 13vh;
   }
+
   to {
     bottom: 11vh;
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 992px) {
   .hero {
     font-size: $small-font-size;
-    &__logo{
+
+    &__logo {
       font-size: 100px;
     }
-  }
 
+    &__header {
+      padding: 0;
+    }
+  }
 }
