@@ -1,7 +1,7 @@
 module.exports = {
   plugins: {
-    "posthtml-include": {
-      root: "./src/partials"
+    'posthtml-include': {
+      root: './src/partials'
     }
   }
 };

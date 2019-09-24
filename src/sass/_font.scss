@@ -2,14 +2,13 @@
 
 @font-face {
   font-family: "myfont";
-  src:url("../fonts/myfont.eot");
-  src:url("../fonts/myfont.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/myfont.eot");
+  src: url("../fonts/myfont.eot?#iefix") format("embedded-opentype"),
     url("../fonts/myfont.woff") format("woff"),
     url("../fonts/myfont.ttf") format("truetype"),
     url("../fonts/myfont.svg#myfont") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [data-icon]:before {
@@ -44,7 +43,21 @@
 .i-circle-down:before {
   content: "\61";
 }
-
 .i-pj:before {
   content: "\63";
+}
+.i-link:before {
+  content: "\64";
+}
+.i-github:before {
+  content: "\66";
+}
+.i-linkedin:before {
+  content: "\65";
+}
+.i-git-square:before {
+  content: "\67";
+}
+.i-vcard:before {
+  content: "\68";
 }
