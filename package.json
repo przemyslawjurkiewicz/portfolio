@@ -22,6 +22,14 @@
       "pre-commit": "pretty-quick --staged && lint-staged"
     }
   },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "src/images/min",
+        "staticOutDir": "images"
+      }
+    ]
+  },
   "lint-staged": {
     "*.js": [
       "eslint --fix",
@@ -42,6 +50,7 @@
     "lint-staged": "^8.1.0",
     "mkdirp": "^0.5.1",
     "parcel-bundler": "^1.11.0",
+    "parcel-plugin-static-files-copy": "^2.2.1",
     "posthtml-include": "^1.2.0",
     "posthtml-modules": "^0.4.2",
     "prettier": "^1.15.3",
