@@ -1,13 +1,13 @@
 <section class="portfolio">
-  <h2 class="portfolio__header">PORTFOLIO</h2>
-  <div id="portfolio-wrapper" class="portfolio__wrapper col-sm-12 col-lg-12"></div>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
     preserveAspectRatio="none"
   >
-    <polygon fill="white" points="0,100 100,0 100,100" />
+    <polygon points="0,0 100,0 0,100" />
   </svg>
+  <h2 class="portfolio__header">PORTFOLIO</h2>
+  <div id="portfolio-wrapper" class="portfolio__wrapper col-sm-12 col-lg-12"></div>
 </section>
 
 <script id="portfolio-section-template" type="x-tmpl-mustache">
@@ -15,6 +15,7 @@
     <h3 class="section__header">{{title}}</h3>
     <p class="section__text col-sm-12 col-lg-6">{{description}}</p>
     <div id={{ id }} class="section__carts-wrapper col-sm-12 col-lg-12 "></div>
+    <hr>
   </div>
 </script>
 

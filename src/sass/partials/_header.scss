@@ -17,7 +17,7 @@
 .navigation {
   transition: opacity 2s linear;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -72,7 +72,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(45deg, #292929, #1bb1e7);
+  background: linear-gradient(45deg, $dark, $color-primary);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   font-size: $medium-font-size;
@@ -81,7 +81,7 @@
     font-size: 40px;
     position: absolute;
     animation: moveDown 500ms linear infinite;
-
+    z-index: 2;
     &:hover {
       cursor: pointer;
     }
@@ -94,7 +94,9 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    z-index: 2;
     animation: gradientBG 6s ease-out infinite;
+    -webkit-animation: gradientBG 6s ease-out infinite;
   }
 
   &__header {
@@ -106,6 +108,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    z-index: 2;
     animation: gradientBG 10s ease infinite;
 
     &--second {
