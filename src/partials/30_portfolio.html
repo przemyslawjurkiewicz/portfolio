@@ -1,12 +1,19 @@
 <section class="portfolio">
   <h2 class="portfolio__header">PORTFOLIO</h2>
   <div id="portfolio-wrapper" class="portfolio__wrapper col-sm-12 col-lg-12"></div>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="none"
+  >
+    <polygon fill="white" points="0,100 100,0 100,100" />
+  </svg>
 </section>
 
 <script id="portfolio-section-template" type="x-tmpl-mustache">
   <div class="section">
     <h3 class="section__header">{{title}}</h3>
-    <p class="section__text">{{description}}</p>
+    <p class="section__text col-sm-12 col-lg-6">{{description}}</p>
     <div id={{ id }} class="section__carts-wrapper col-sm-12 col-lg-12 "></div>
   </div>
 </script>
@@ -19,5 +26,18 @@
       <p class="cart__text">{{description}}</p>
       <div class="cart__wrapper"><p class="cart__text">Technologie: </p>{{#logo}} <img class="cart__logos" src="{{.}}" /> {{/logo}}</div>
     </div>
+  </div>
+</script>
+
+<script id="portfolio-gallery-template" type="x-tmpl-mustache">
+  <div class="gallery col-sm-12 col-lg-12">
+    {{#images}}
+       <div class="gallery__slide">
+          <img class="gallery__image" src={{image}}>
+          <p class="gallery__text">{{description}}</p>
+       </div>
+    {{/images}}
+    <div class="prev" >&#10094;</div>
+    <div class="next" >&#10095;</div>
   </div>
 </script>
