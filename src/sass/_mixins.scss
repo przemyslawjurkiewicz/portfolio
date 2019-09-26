@@ -23,3 +23,9 @@
 @media (min-width: 1200px) {
   @include grid("xl");
 }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

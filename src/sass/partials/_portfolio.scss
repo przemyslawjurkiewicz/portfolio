@@ -2,9 +2,7 @@
   background: linear-gradient(55deg, $dark, $color-primary);
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   flex-direction: column;
   flex-basis: 100%;
 
@@ -28,9 +26,7 @@
 }
 
 .section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   flex-direction: column;
 
   &__header {
@@ -48,9 +44,7 @@
   }
 
   &__carts-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -66,9 +60,8 @@
 }
 
 .cart {
-  display: flex;
   margin: 10px 5px 0;
-  justify-content: center;
+  @include flex-center;
   align-items: flex-start;
   background: $grey-light;
   border: 2px double $light;
@@ -108,9 +101,7 @@
 
   &__link {
     margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     background: $color-primary;
     border-radius: 10px;
     width: 100px;
@@ -171,9 +162,7 @@
 }
 
 .gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   max-width: 1000px;
   position: relative;
   margin: auto;

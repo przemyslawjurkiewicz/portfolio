@@ -1,7 +1,5 @@
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   flex-direction: column;
 
   &__header {
@@ -11,9 +9,7 @@
 
   &__container {
     max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-direction: column;
   }
 

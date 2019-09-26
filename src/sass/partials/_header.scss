@@ -22,9 +22,7 @@
   left: 0;
   right: 0;
   background-color: $dark;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 
   &__logo {
     height: 30px;
@@ -68,9 +66,7 @@
 
 .hero {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   flex-direction: column;
   background: linear-gradient(45deg, $dark, $color-primary);
   background-size: 400% 400%;
