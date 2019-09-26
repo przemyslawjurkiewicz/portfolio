@@ -2744,6 +2744,11 @@ fsevents@^2.0.6:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.0.7.tgz#382c9b443c6cbac4c57187cdda23aa3bf1ccfc2a"
   integrity sha512-a7YT0SV3RB+DjYcppwVDLtn13UQnmg0SWZS7ezZD0UjnLwXmy8Zm21GMVGLaFGimIqcvyMQaOJBrop8MyOp1kQ==
 
+fslightbox@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/fslightbox/-/fslightbox-2.0.1.tgz#4111f7c1f49db0956f060e583892a62dc190379a"
+  integrity sha512-yk1uU1kHkIE2vmQ222W5LlkWJIxjvfTKEv9+/NwFLtn2B6PgLlRaKkwkrYp5SBMtwYt2vCwTp06BMqpUXTvwUA==
+
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
