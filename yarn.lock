@@ -2628,6 +2628,11 @@ file-system@2.2.2:
     file-match "^1.0.1"
     utils-extend "^1.0.4"
 
+filed@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/filed/-/filed-0.0.7.tgz#3087ec531fb9a78600a6ec8e0b106e2c574d9773"
+  integrity sha1-MIfsUx+5p4YApuyOCxBuLFdNl3M=
+
 filesize@^3.6.0:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/filesize/-/filesize-3.6.1.tgz#090bb3ee01b6f801a8a8be99d31710b3422bb317"
@@ -2743,11 +2748,6 @@ fsevents@^2.0.6:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.0.7.tgz#382c9b443c6cbac4c57187cdda23aa3bf1ccfc2a"
   integrity sha512-a7YT0SV3RB+DjYcppwVDLtn13UQnmg0SWZS7ezZD0UjnLwXmy8Zm21GMVGLaFGimIqcvyMQaOJBrop8MyOp1kQ==
-
-fslightbox@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/fslightbox/-/fslightbox-2.0.1.tgz#4111f7c1f49db0956f060e583892a62dc190379a"
-  integrity sha512-yk1uU1kHkIE2vmQ222W5LlkWJIxjvfTKEv9+/NwFLtn2B6PgLlRaKkwkrYp5SBMtwYt2vCwTp06BMqpUXTvwUA==
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -3940,6 +3940,11 @@ mime-types@^2.1.12, mime-types@~2.1.19:
   integrity sha512-WaFHS3MCl5fapm3oLxU4eYDw77IQM2ACcxQ9RIxfaC3ooc6PFuBMGZZsYpvoXS5D5QTWPieo1jjLdAm3TBP3cQ==
   dependencies:
     mime-db "1.40.0"
+
+mime@1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-1.2.7.tgz#c7a13f33a7073d9900f288436b06b3a16200865b"
+  integrity sha1-x6E/M6cHPZkA8ohDawazoWIAhls=
 
 mime@1.6.0:
   version "1.6.0"
@@ -6572,6 +6577,19 @@ wordwrap@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
   integrity sha1-J1hIEIkUVqQXHI0CJkQa3pDLyus=
+
+wow.js@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/wow.js/-/wow.js-1.2.2.tgz#247519b0a342319b1a63e22aea9acec1a9ea57f5"
+  integrity sha1-JHUZsKNCMZsaY+Iq6prOwanqV/U=
+
+wow@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/wow/-/wow-0.0.6.tgz#50a366f641400408896c774c0763ee5def36af0d"
+  integrity sha1-UKNm9kFABAiJbHdMB2PuXe82rw0=
+  dependencies:
+    filed "0.0.7"
+    mime "1.2.7"
 
 wrap-ansi@^3.0.1:
   version "3.0.1"
