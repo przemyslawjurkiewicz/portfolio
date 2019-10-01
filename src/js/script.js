@@ -1,4 +1,10 @@
 import { Carts, Groups } from '../vendor/dane';
+import WOW from 'wow.js';
+new WOW({
+  mobile: false,
+  live: true,
+  resetAnimation: true
+}).init();
 
 let hero = document.querySelector('.hero');
 let heroHeight = hero.offsetHeight / 2;
@@ -42,7 +48,6 @@ const showSlides = n => {
     slides[i].style.display = 'none';
   }
   slides[slideIndex - 1].style.display = 'block';
-  console.log(slideIndex);
 };
 
 let slideIndex = 1;
