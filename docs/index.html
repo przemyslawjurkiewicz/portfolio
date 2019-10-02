@@ -1,0 +1,98 @@
+<!DOCTYPE html
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/animate.24fc26a9.css" />
+  <link rel="stylesheet" href="/style.0bfa121d.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navigation navigation--hidden">
+      <img class="navigation__logo" src="/pjc.cfe954e0.gif" />
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#">Start</a></li>
+        <a href="#"><i class="i-home-1 navigation__icon"></i></a>
+        <li class="navigation__item"><a href="#about">O mnie</a></li>
+        <a href="#about"><i class="i-user-1 navigation__icon"></i></a>
+        <li class="navigation__item"><a href="#portfolio">Portfolio</a></li>
+        <a href="#portfolio"><i class="i-folder navigation__icon"></i></a>
+        <li class="navigation__item"><a href="#cv">CV</a></li>
+        <a href="#cv"><i class="i-vcard navigation__icon"></i></a>
+        <li class="navigation__item"><a href="#contact">Kontakt</a></li>
+        <a href="#contact"><i class="i-mail navigation__icon"></i></a>
+      </ul>
+    </nav>
+    <div class="hero">
+      <i class="i-pj hero__logo"></i>
+      <h1 class="hero__header">
+        Przemysław Jurkiewicz<br /><span class="hero__header hero__header--second"
+          >junior web-developer</span
+        >
+      </h1>
+      <i class="hero__icon i-double-down"><a href="#about"></a></i>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <polygon fill="#fff" points="0,100 100,0 100,100" />
+    </svg>
+  </header>
+  <section class="about">
+    <h2 class="about__header">O mnie</h2>
+    <div class="about__container">
+      <img class="about__image wow bounceIn" src="/ja.4d979dff.png" />
+      <p class="about__text col-lg-8 wow fadeIn">
+        Ukończyłem studia inżynierskie o kierunku informatyka – sieci i
+        programowanie.<br />
+        Od zawsze byłem związany z branżą informatyczną i chciałem się w niej rozwijać.
+        W celu usystematyzowania wiedzy ukończyłem bootcamp Kodilla Web Developer.
+        Oprócz tego w ramach samodzielnej nauki wykonałem też kilka projektów stron
+        internetowych oraz aplikacji głównie z wykorzystaniem biblioteki React.js w
+        połączeniu z Reduxem. Wspólnie z grupą wykonaliśmy także projekt z
+        wykorzystaniem metody Agile w technice Kanban opartej na Jirze.<br />
+        Dla swojego obecnego pracodawcy wykonałem aplikację bazodanową opartą na C# i
+        SQL. Zapewniam też wsparcie i szkolenie użytkowników systemów. Sam też biorę
+        udział w szkoleniach i chętnie skorzystam z możliwości nauki.
+      </p>
+    </div>
+  </section>
+  <section class="portfolio">
+    <svg xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 0,100" /></svg>
+    <h2 class="portfolio__header">PORTFOLIO</h2>
+    <div
+      id="portfolio-wrapper"
+      class="portfolio__wrapper col-sm-12 col-md-12 col-lg-12"
+    ></div>
+  </section>
+  <script id="portfolio-section-template" type="x-tmpl-mustache">
+    <div class="section">
+      <hr class="section__horizontal-line wow slideInRight">
+      <h3 class="section__header wow slideInLeft">{{title}}</h3>
+      <p class="section__text col-sm-12 col-lg-6 wow slideInRight">{{description}}</p>
+      <div id={{ id }} class="section__carts-wrapper col-md-12 col-sm-12 col-lg-12 "></div>
+    </div></script
+  ><script id="portfolio-cart-template" type="x-tmpl-mustache">
+    <div class="cart col-lg-4 col-md-6 col-sm-12 wow flipInX" style="background-image: url({{image}})">
+      <div class="cart__body">
+        <h3 class="cart__header">{{title}}</h3>
+        <div class="cart__wrapper">{{#links}}<a class="cart__link" href="{{link}}" target="_blank"><i class="cart__icon i-{{icon}}"></i>{{icon}}</a>{{/links}}</div>
+        <p class="cart__text">{{description}}</p>
+        <div class="cart__wrapper"><p class="cart__text">Technologie: </p>{{#logo}} <img class="cart__logos" src="{{.}}" /> {{/logo}}</div>
+      </div>
+    </div></script
+  ><script id="portfolio-gallery-template" type="x-tmpl-mustache">
+    <div class="gallery col-sm-12 col-lg-12 wow fadeIn">
+      {{#images}}
+         <div class="gallery__slide">
+            <img class="gallery__image" src={{image}}>
+            <p class="gallery__text">{{description}}</p>
+         </div>
+      {{/images}}
+      <div class="prev" >&#10094;</div>
+      <div class="next" >&#10095;</div>
+    </div>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+  <script src="/script.4ba058a5.js" async defer></script>
+</body>
