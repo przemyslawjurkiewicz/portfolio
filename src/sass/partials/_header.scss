@@ -15,6 +15,7 @@
 }
 
 .navigation {
+  padding: 5px;
   transition: opacity 2s linear;
   position: fixed;
   z-index: 10;
@@ -25,7 +26,7 @@
   @include flex-center;
 
   &__logo {
-    height: 50px;
+    height: 40px;
     padding: 0 50px;
   }
 
