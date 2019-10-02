@@ -342,11 +342,11 @@ template {
 }
 @font-face {
   font-family: myfont;
-  src: url(/myfont.82536cb0.eot);
-  src: url(/myfont.82536cb0.eot?#iefix) format("embedded-opentype"),
-    url(/myfont.46fad624.woff) format("woff"),
-    url(/myfont.de7b834e.ttf) format("truetype"),
-    url(/myfont.6d427d5d.svg#myfont) format("svg");
+  src: url(myfont.82536cb0.eot);
+  src: url(myfont.82536cb0.eot?#iefix) format("embedded-opentype"),
+    url(myfont.46fad624.woff) format("woff"),
+    url(myfont.de7b834e.ttf) format("truetype"),
+    url(myfont.6d427d5d.svg#myfont) format("svg");
   font-weight: 400;
   font-style: normal;
 }
