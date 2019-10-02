@@ -342,11 +342,11 @@ template {
 }
 @font-face {
   font-family: myfont;
-  src: url(/myfont.82536cb0.eot);
-  src: url(/myfont.82536cb0.eot?#iefix) format("embedded-opentype"),
-    url(/myfont.46fad624.woff) format("woff"),
-    url(/myfont.de7b834e.ttf) format("truetype"),
-    url(/myfont.6d427d5d.svg#myfont) format("svg");
+  src: url(myfont.82536cb0.eot);
+  src: url(myfont.82536cb0.eot?#iefix) format("embedded-opentype"),
+    url(myfont.46fad624.woff) format("woff"),
+    url(myfont.de7b834e.ttf) format("truetype"),
+    url(myfont.6d427d5d.svg#myfont) format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -550,7 +550,7 @@ template {
     padding: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navigation__item {
     display: none;
   }
@@ -833,4 +833,4 @@ a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=/style.0bfa121d.css.map */
+/*# sourceMappingURL=style.8b570455.css.map */
