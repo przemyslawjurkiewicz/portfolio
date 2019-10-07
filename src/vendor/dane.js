@@ -28,7 +28,7 @@ export const Groups = [
 
 export const Carts = [
   {
-    image: '/images/1.jpg',
+    image: 'images/1.jpg',
     id: 'html',
     title: 'Beauty&Go',
     links: [
@@ -38,10 +38,10 @@ export const Carts = [
       }
     ],
     description: 'Strona zrobiona dla koleżanki, która prowadzi studio kosmetyczne.',
-    logo: ['/images/html.gif', '/images/css.gif']
+    logo: ['images/html.gif', 'images/css.gif']
   },
   {
-    image: '/images/2.jpg',
+    image: 'images/2.jpg',
     id: 'html',
     title: 'Midowy Raj',
     links: [
@@ -55,10 +55,10 @@ export const Carts = [
       }
     ],
     description: 'Strona dla znajomych pszczelarzy. Nauka Bootstrapa.',
-    logo: ['/images/html.gif', '/images/css.gif', '/images/bootstrap.gif']
+    logo: ['images/html.gif', 'images/css.gif', 'images/bootstrap.gif']
   },
   {
-    image: '/images/3.jpg',
+    image: 'images/3.jpg',
     id: 'html',
     title: 'Admin Panel',
     links: [
@@ -72,10 +72,10 @@ export const Carts = [
       }
     ],
     description: 'Projekt przykładowej strony panelu administracyjnego.',
-    logo: ['/images/html.gif', '/images/sass.gif', '/images/js.gif']
+    logo: ['images/html.gif', 'images/sass.gif', 'images/js.gif']
   },
   {
-    image: '/images/4.jpg',
+    image: 'images/4.jpg',
     id: 'html',
     title: 'AWAX PSD to HTML',
     links: [
@@ -89,10 +89,10 @@ export const Carts = [
       }
     ],
     description: 'PSD Dto HTML - zabawa z Sass, podejście komponentowe.',
-    logo: ['/images/html.gif', '/images/sass.gif']
+    logo: ['images/html.gif', 'images/sass.gif']
   },
   {
-    image: '/images/5.jpg',
+    image: 'images/5.jpg',
     id: 'html',
     title: 'Arrow PSD to HTML',
     links: [
@@ -106,10 +106,10 @@ export const Carts = [
       }
     ],
     description: 'PSD to HTML - nauka Sassa.',
-    logo: ['/images/html.gif', '/images/sass.gif']
+    logo: ['images/html.gif', 'images/sass.gif']
   },
   {
-    image: '/images/7.jpg',
+    image: 'images/7.jpg',
     id: 'html',
     title: 'Mache PSD to HTML',
     links: [
@@ -123,10 +123,10 @@ export const Carts = [
       }
     ],
     description: 'Moje pierwsze PSD to HTML - nauka css, brak RWD :(',
-    logo: ['/images/html.gif', '/images/css.gif']
+    logo: ['images/html.gif', 'images/css.gif']
   },
   {
-    image: '/images/8.jpg',
+    image: 'images/8.jpg',
     id: 'js',
     title: 'Gra papier, kamień, nożyce',
     links: [
@@ -140,10 +140,10 @@ export const Carts = [
       }
     ],
     description: 'Prosta gra. Nauka podstaw Java Script.',
-    logo: ['/images/js.gif', '/images/html.gif', '/images/sass.gif']
+    logo: ['images/js.gif', 'images/html.gif', 'images/sass.gif']
   },
   {
-    image: '/images/9.jpg',
+    image: 'images/9.jpg',
     id: 'js',
     title: 'Kraftowe browary na pomorzu.',
     links: [
@@ -157,10 +157,10 @@ export const Carts = [
       }
     ],
     description: 'Zabawa w połączenie googlemap api, flickity i mustache.js.',
-    logo: ['/images/js.gif', '/images/gmap.gif', '/images/html.gif', '/images/css.gif']
+    logo: ['images/js.gif', 'images/gmap.gif', 'images/html.gif', 'images/css.gif']
   },
   {
-    image: '/images/10.jpg',
+    image: 'images/10.jpg',
     id: 'js',
     title: 'Wyszukiwarka państw.',
     links: [
@@ -174,7 +174,7 @@ export const Carts = [
       }
     ],
     description: 'Aplikacja używająca architektury REST i zapytań Fetch.',
-    logo: ['/images/js.gif', '/images/es6.gif', '/images/html.gif', '/images/css.gif']
+    logo: ['images/js.gif', 'images/es6.gif', 'images/html.gif', 'images/css.gif']
   },
   {
     image: '/images/11.jpg',
@@ -191,10 +191,10 @@ export const Carts = [
       }
     ],
     description: 'Tablica kanban. Wszyscy mają aplikację TODO - mam i ja :) ',
-    logo: ['/images/js.gif', '/images/html.gif', '/images/sass.gif']
+    logo: ['images/js.gif', 'images/html.gif', 'images/sass.gif']
   },
   {
-    image: '/images/12.jpg',
+    image: 'images/12.jpg',
     id: 'react',
     title: 'Jubiko Shop',
     links: [
@@ -209,14 +209,14 @@ export const Carts = [
     ],
     description: 'Aplikacja sklepu internetowego. Praca zaliczeniowa kursu WebDev.',
     logo: [
-      '/images/mongo.gif',
-      '/images/react.gif',
-      '/images/redux.gif',
-      '/images/node.gif'
+      'images/mongo.gif',
+      'images/react.gif',
+      'images/redux.gif',
+      'images/node.gif'
     ]
   },
   {
-    image: '/images/13.jpg',
+    image: 'images/13.jpg',
     id: 'react',
     title: 'User-Auth',
     links: [
@@ -232,14 +232,14 @@ export const Carts = [
     description:
       'Aplikacja rejestracji i logowania użytkownika. Użyłem passport-jwt i bcrypt.js.',
     logo: [
-      '/images/mongo.gif',
-      '/images/react.gif',
-      '/images/redux.gif',
-      '/images/node.gif'
+      'images/mongo.gif',
+      'images/react.gif',
+      'images/redux.gif',
+      'images/node.gif'
     ]
   },
   {
-    image: '/images/14.jpg',
+    image: 'images/14.jpg',
     id: 'react',
     title: 'Sudoku',
     links: [
@@ -254,10 +254,10 @@ export const Carts = [
     ],
     description:
       'Gra sudoku, wykorzystałem bibliotekę sudoku-umd. Projekt zaliczeniowy kursu Reacta.',
-    logo: ['/images/react.gif', '/images/css.gif']
+    logo: ['images/react.gif', 'images/css.gif']
   },
   {
-    image: '/images/15.jpg',
+    image: 'images/15.jpg',
     id: 'react',
     title: 'Country-App',
     links: [
@@ -271,15 +271,10 @@ export const Carts = [
       }
     ],
     description: 'Aplikacja Create React App. Nauka Reduxa i ReactRoutera. ',
-    logo: [
-      '/images/react.gif',
-      '/images/redux.gif',
-      '/images/node.gif',
-      '/images/json.png'
-    ]
+    logo: ['images/react.gif', 'images/redux.gif', 'images/node.gif', 'images/json.png']
   },
   {
-    image: '/images/16.jpg',
+    image: 'images/16.jpg',
     id: 'react',
     title: 'Comments list',
     links: [
@@ -293,10 +288,10 @@ export const Carts = [
       }
     ],
     description: 'Aplikacja dodawania komentarzy i ich oceniania. Nauka Reduxa.',
-    logo: ['/images/react.gif', '/images/redux.gif']
+    logo: ['images/react.gif', 'images/redux.gif']
   },
   {
-    image: '/images/17.jpg',
+    image: 'images/17.jpg',
     id: 'react',
     title: 'Git Users Search',
     links: [
@@ -310,10 +305,10 @@ export const Carts = [
       }
     ],
     description: 'Wyszukiwarka użytkowników GitHuba. Api GitHuba i podstawy Reacta.',
-    logo: ['/images/react.gif', '/images/json.png']
+    logo: ['images/react.gif', 'images/json.png']
   },
   {
-    image: '/images/18.jpg',
+    image: 'images/18.jpg',
     id: 'react',
     title: 'Stoper',
     links: [
@@ -327,7 +322,7 @@ export const Carts = [
       }
     ],
     description: 'Poprostu stoper. React + ES6 ',
-    logo: ['/images/react.gif', '/images/es6.gif']
+    logo: ['images/react.gif', 'images/es6.gif']
   },
   {
     image: '/images/19.jpg',
@@ -344,38 +339,38 @@ export const Carts = [
       }
     ],
     description: 'Wyszukiwarka Gifów, Api Giphy.',
-    logo: ['/images/react.gif']
+    logo: ['images/react.gif']
   },
   {
     id: 'other',
     images: [
       {
-        image: '/images/r1.jpg',
+        image: 'images/r1.jpg',
         description:
           'Program pozwala na współtworzenie dokumenu przez wielu użytkowniów jednocześnie. Użytkownik ma przypisane funkcje może dodawać punkty, zatwierdzać je lub edytować dokument. Program pobiera login użytkownia z systemu Windows i przypisuje mu uprawnienia.'
       },
       {
-        image: '/images/r3.jpg',
+        image: 'images/r3.jpg',
         description:
           'Użytkownicy mogą dodawać punkty do dokumentu, lub edytować dodane przez siebie punkty o ile nie zostały już zatwierdzone przez przełożonego. Mają też do dyspozycji ogólne i dodane przez siebie szablony punktów'
       },
       {
-        image: '/images/r2.jpg',
+        image: 'images/r2.jpg',
         description:
           'Redaktor pobiera zatwierdzone wcześniej przez przełożonego punkty i przygotowuje do wydruku cały dokument.'
       },
       {
-        image: '/images/r4.jpg',
+        image: 'images/r4.jpg',
         description:
           'Dokument rozkazu układa się automatyczne zgodzie z "Regulaminem Ogólnym Sił Zbrojnych Rzeczypospolitej Polskiej 2014" i "Instrukcją o zasadach pracy biurowej w Resorcie Obrony Narodowej 2013".'
       },
       {
-        image: '/images/r5.jpg',
+        image: 'images/r5.jpg',
         description:
           'Istnieje możliwość wydrukowania zamówinych wcześniej przez użytkownika zyciągów z "Rozkazu dziennego".'
       },
       {
-        image: '/images/r6.jpg',
+        image: 'images/r6.jpg',
         description:
           'Administrator ma dostęp do ustawień programu, przypisania ról użytkowników i zmian w szablonach wydrów.'
       }
