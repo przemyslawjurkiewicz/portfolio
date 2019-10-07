@@ -13,4 +13,5 @@ $medium-font-size: 1.2em;
 $small-font-size: 0.8em;
 
 /* Fonts */
-$brand-font: "Roboto", sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+$brand-font: "Raleway", sans-serif;
