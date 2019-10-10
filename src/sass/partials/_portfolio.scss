@@ -38,9 +38,10 @@
   }
 
   &__text {
-    color: $light;
+    color: $color-primary;
     position: relative;
     text-align: center;
+    font-weight: 600;
   }
 
   &__carts-wrapper {

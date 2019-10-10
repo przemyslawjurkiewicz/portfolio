@@ -30,6 +30,10 @@
   &__logo {
     height: 40px;
     padding: 0 50px;
+
+    &--hidden {
+      opacity: 0;
+    }
   }
 
   &--hidden {
@@ -52,6 +56,15 @@
     list-style: none;
     font-weight: bold;
     text-transform: uppercase;
+
+    &--active {
+      &:after {
+        content: " ";
+        height: 3px;
+        background: $light;
+        display: block;
+      }
+    }
 
     &:focus {
       outline: none;
