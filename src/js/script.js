@@ -55,6 +55,10 @@ Groups.map(group =>
   generateTemplate('portfolio-section-template', group, 'portfolio-wrapper')
 );
 
+Groups.map(group =>
+  generateTemplate('portfolio-menu-template', group, 'portfolio-menu')
+);
+
 Carts.map(cart =>
   cart.id === 'other'
     ? generateTemplate('portfolio-gallery-template', cart, cart.id)
@@ -68,6 +72,24 @@ function generateTemplate(name, data, basicElement) {
   Mustache.parse(template);
   element.innerHTML += Mustache.render(template, data);
 }
+
+// Portfolio menu swicher
+const menuButtons = [...document.getElementsByClassName('portfolio__button')];
+const portfolioToggle = id => {
+  let sections = [...document.getElementsByClassName('section')];
+  sections.map(section =>
+    section.id === id
+      ? section.classList.add('section--active')
+      : section.classList.remove('section--active')
+  );
+};
+
+menuButtons.map(element =>
+  element.addEventListener('click', () => portfolioToggle(element.id))
+);
+
+// Click on first button in menu.
+document.getElementsByClassName('portfolio__button')[0].click();
 
 // Gallery slider
 const showSlides = n => {
@@ -91,6 +113,3 @@ let prev = document.querySelector('.prev');
 let next = document.querySelector('.next');
 prev.addEventListener('click', () => showSlides((slideIndex -= 1)));
 next.addEventListener('click', () => showSlides((slideIndex += 1)));
-
-console.log(typeof window.orientation !== 'undefined') ||
-  navigator.userAgent.indexOf('IEMobile') !== -1;
