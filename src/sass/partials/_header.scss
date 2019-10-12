@@ -77,8 +77,12 @@
     }
 
     &:hover {
-      background-color: $light;
-      color: $dark;
+      &:after {
+        content: " ";
+        height: 3px;
+        background: $light;
+        display: block;
+      }
     }
   }
 
@@ -93,8 +97,8 @@
   height: 100vh;
   @include flex-center;
   flex-direction: column;
-  background: linear-gradient(90deg, $grey 19px, transparent 1%) center,
-    linear-gradient($grey 19px, transparent 1%) center;
+  background: linear-gradient(90deg, $grey-light 19px, transparent 1%) center,
+    linear-gradient($grey-light 19px, transparent 1%) center $color-primary;
   background-size: 20px 20px;
   font-size: $medium-font-size;
 
@@ -147,14 +151,15 @@
     padding: 0;
     margin: 0;
     font-size: 150px;
-    background: linear-gradient(45deg, #000000, #ffffff, #000000);
-    background-size: 400% 400%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    z-index: 2;
-    animation: gradientBG 6s ease-out infinite;
-    -webkit-animation: gradientBG 6s ease-out infinite;
+    fill: $light;
+    // background: linear-gradient(45deg, #000000, #ffffff, #000000);
+    //  background-size: 400% 400%;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // color: transparent;
+    // z-index: 2;
+    // animation: gradientBG 6s ease-out infinite;
+    // -webkit-animation: gradientBG 6s ease-out infinite;
   }
 
   &__header {
