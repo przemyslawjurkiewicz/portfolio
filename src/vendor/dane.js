@@ -115,11 +115,11 @@ export const Carts = [
     links: [
       {
         icon: 'link',
-        link: 'https://przemyslawjurkiewicz.github.io/psd-to-html-2/'
+        link: 'https://przemyslawjurkiewicz.github.io/psd-to-html-1/'
       },
       {
         icon: 'github',
-        link: 'https://github.com/przemyslawjurkiewicz/psd-to-html-2'
+        link: 'https://github.com/przemyslawjurkiewicz/psd-to-html-1'
       }
     ],
     description: 'Moje pierwsze PSD to HTML - nauka css, brak RWD :(',
