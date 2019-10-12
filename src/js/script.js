@@ -10,31 +10,39 @@ new WOW({
 
 // Navigation bar change when scroll
 let hero = document.querySelector('.hero');
-let heroHeight = hero.offsetHeight / 2;
+let heroHeight = hero.offsetHeight / 4;
 
-window.onscroll = () => {
-  let currentScrollPos = window.pageYOffset;
-  if (heroHeight < currentScrollPos) {
-    document.querySelector('.navigation').classList.remove('navigation--hidden');
-    document
-      .querySelector('.navigation__logo')
-      .classList.remove('navigation__logo--hidden');
-  } else {
-    document.querySelector('.navigation').classList.add('navigation--hidden');
-    document
-      .querySelector('.navigation__logo')
-      .classList.add('navigation__logo--hidden');
-  }
-};
+// If mobile olways on
+if (
+  typeof window.orientation !== 'undefined' ||
+  navigator.userAgent.indexOf('IEMobile') !== -1
+) {
+  document.querySelector('.navigation').classList.remove('navigation--hidden');
+}
+// If not change when sroll
+else {
+  window.onscroll = () => {
+    let currentScrollPos = window.pageYOffset;
+    if (heroHeight < currentScrollPos) {
+      document.querySelector('.navigation').classList.remove('navigation--hidden');
+      document
+        .querySelector('.navigation__logo')
+        .classList.remove('navigation__logo--hidden');
+    } else {
+      document.querySelector('.navigation').classList.add('navigation--hidden');
+      document
+        .querySelector('.navigation__logo')
+        .classList.add('navigation__logo--hidden');
+    }
+  };
+}
 
 // Navigation item active when sroll on section
 const links = document.querySelectorAll('.navigation__item');
 const sections = document.querySelectorAll('section');
 function changeLinkState() {
   let index = sections.length;
-
   while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
-
   links.forEach(link => link.classList.remove('navigation__item--active'));
   links[index].classList.add('navigation__item--active');
 }
@@ -83,3 +91,6 @@ let prev = document.querySelector('.prev');
 let next = document.querySelector('.next');
 prev.addEventListener('click', () => showSlides((slideIndex -= 1)));
 next.addEventListener('click', () => showSlides((slideIndex += 1)));
+
+console.log(typeof window.orientation !== 'undefined') ||
+  navigator.userAgent.indexOf('IEMobile') !== -1;
