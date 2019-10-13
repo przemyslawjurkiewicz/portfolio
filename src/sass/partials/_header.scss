@@ -7,9 +7,9 @@
 
   svg {
     position: absolute;
-    bottom: 0vh;
+    bottom: 0;
     width: 100%;
-    height: 10vw;
+    height: 10vh;
     z-index: 1;
   }
 }
@@ -94,7 +94,7 @@
 }
 
 .hero {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   @include flex-center;
   flex-direction: column;
   background: linear-gradient(90deg, $grey-light 19px, transparent 1%) center,
@@ -118,48 +118,11 @@
     @include flex-center;
   }
 
-  &__link {
-    margin: 0 10px;
-    @include flex-center;
-    border-radius: 25px;
-    padding: 0 10px;
-    color: $color-primary;
-    font-size: $normal-font-size;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border: 2px solid $color-primary;
-    background-color: inherit;
-    background-position: 100% 0;
-    background-size: 300%;
-    transition: 0.4s;
-    background-image: linear-gradient(135deg, $color-primary 50%, transparent 50%);
-
-    &:hover {
-      background-position: 0 100%;
-      color: $light;
-    }
-  }
-
-  &__icon {
-    padding: 0 20px;
-    font-size: $big-font-size;
-  }
-
   &__logo {
     padding: 0;
     margin: 0;
     font-size: 150px;
     fill: $light;
-    // background: linear-gradient(45deg, #000000, #ffffff, #000000);
-    //  background-size: 400% 400%;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // color: transparent;
-    // z-index: 2;
-    // animation: gradientBG 6s ease-out infinite;
-    // -webkit-animation: gradientBG 6s ease-out infinite;
   }
 
   &__header {
@@ -226,19 +189,25 @@
 }
 
 @media (max-width: 767px) {
-  .navigation__item {
-    display: none;
-  }
+  .navigation {
+    bottom: 0;
+    top: auto;
+    height: 5%;
 
-  .navigation__list {
-    flex: 1 1 auto;
-  }
+    &__item {
+      display: none;
+    }
 
-  .navigation__icon {
-    display: block;
-  }
+    &__list {
+      flex: 1 1 auto;
+    }
 
-  .navigation__logo {
-    padding: 0 10px;
+    &__icon {
+      display: flex;
+    }
+
+    &__logo {
+      display: none;
+    }
   }
 }

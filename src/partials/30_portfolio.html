@@ -22,7 +22,7 @@
 </section>
 
 <script id="portfolio-menu-template" type="x-tmpl-mustache">
-  <button  id={{ title }} class="portfolio__button">{{title}}</button>
+  <button  id={{ title }} class="button button--active portfolio__button">{{title}}</button>
 </script>
 
 <script id="portfolio-section-template" type="x-tmpl-mustache">
@@ -38,7 +38,7 @@
   <div class="cart col-lg-4 col-md-6 col-sm-12" style="background-image: url({{image}})">
     <div class="cart__body">
       <h3 class="cart__header">{{title}}</h3>
-      <div class="cart__wrapper">{{#links}}<a class="cart__link" href="{{link}}" target="_blank"><i class="cart__icon i-{{icon}}"></i>{{icon}}</a>{{/links}}</div>
+      <div class="cart__wrapper">{{#links}}<a class="button button--very-small" href="{{link}}" target="_blank"><i class="button__icon button__icon--small i-{{icon}}"></i>{{icon}}</a>{{/links}}</div>
       <p class="cart__text">{{description}}</p>
       <div class="cart__wrapper"><p class="cart__text">Technologie: </p>{{#logo}} <img class="cart__logos" src="{{.}}" /> {{/logo}}</div>
     </div>
