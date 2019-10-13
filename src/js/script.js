@@ -8,6 +8,13 @@ new WOW({
   resetAnimation: true
 }).init();
 
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // Then we set the value in the --vh custom property to the root of the document
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 // Navigation bar change when scroll
 let hero = document.querySelector('.hero');
 let heroHeight = hero.offsetHeight / 4;
@@ -42,7 +49,7 @@ const links = document.querySelectorAll('.navigation__item');
 const sections = document.querySelectorAll('section');
 function changeLinkState() {
   let index = sections.length;
-  while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+  while (--index && window.scrollY + 200 < sections[index].offsetTop) {}
   links.forEach(link => link.classList.remove('navigation__item--active'));
   links[index].classList.add('navigation__item--active');
 }
