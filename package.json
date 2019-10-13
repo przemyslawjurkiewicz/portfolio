@@ -14,7 +14,7 @@
     "build": "parcel build src/index.html --no-cache --public-url ./ ",
     "clean": "rimraf dist",
     "code-quality": "npm run format && npm run lint",
-    "format": "prettier --write \"src/**/*.{js,html,scss}\"",
+    "format": "prettier --write \"src/**/*.{js,scss}\"",
     "lint": "eslint src/"
   },
   "husky": {
