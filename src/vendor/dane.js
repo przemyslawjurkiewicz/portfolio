@@ -325,7 +325,7 @@ export const Carts = [
     logo: ['images/react.gif', 'images/es6.gif']
   },
   {
-    image: '/images/19.jpg',
+    image: 'images/19.jpg',
     id: 'react',
     title: 'Gif Search',
     links: [
