@@ -1,0 +1,14 @@
+.triangle {
+  width: 100%;
+  height: 10vh;
+  z-index: 1;
+  fill: #ffff;
+
+  &--bottom {
+    bottom: 0;
+  }
+
+  &--first {
+    position: absolute;
+  }
+}

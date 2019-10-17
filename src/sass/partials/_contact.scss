@@ -1,0 +1,100 @@
+.contact {
+  background: linear-gradient(90deg, $grey-light 19px, transparent 1%) center,
+    linear-gradient($grey-light 19px, transparent 1%) center $color-primary;
+  background-size: 20px 20px;
+  margin: 0;
+  padding: 0;
+  @include flex-center;
+  flex-direction: column;
+  flex-basis: 100%;
+
+  &__header {
+    font-size: $verybig-font-size;
+    text-transform: uppercase;
+    color: $color-primary;
+
+    &--small {
+      font-size: $normal-font-size;
+    }
+  }
+
+  &__wrapper {
+    @include flex-center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &__my-data {
+    padding: 0 20px;
+    margin-left: 20px;
+    @include flex-center;
+    flex-direction: column;
+    align-self: flex-start;
+    background: $grey-light;
+  }
+
+  &__text {
+    font-size: $normal-font-size;
+    color: $color-primary;
+    align-self: flex-start;
+
+    &--title {
+      font-weight: bold;
+    }
+  }
+
+  &__form {
+    @include flex-center;
+    //align-items: flex-start;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  &__label {
+    align-self: flex-start;
+    color: $color-primary;
+    margin-top: 10px;
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: $normal-font-size;
+  }
+
+  &__input {
+    margin: 15px 0;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid $color-primary;
+    border-radius: 3px;
+    color: $dark;
+    width: 100%;
+
+    &::placeholder {
+      color: $grey-light;
+      font-size: $normal-font-size;
+    }
+
+    &--textarea {
+      height: auto;
+
+    }
+  }
+
+  &__toast {
+    color: $color-primary;
+    padding: 10px 0px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__my-data {
+      margin: 20px 0;
+    }
+  }
+
+}
