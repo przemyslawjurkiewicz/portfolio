@@ -9,10 +9,7 @@
   }
 
   &__container {
-    max-width: 1200px;
-    @include flex-center;
-    justify-content: space-between;
-    //flex-direction: column;
+     @include flex-center;
   }
 
   &__image {
