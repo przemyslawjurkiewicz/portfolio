@@ -173,7 +173,7 @@ export const Carts = [
     logo: ['images/js.gif', 'images/es6.gif', 'images/html.gif', 'images/css.gif']
   },
   {
-    image: '/images/11.jpg',
+    image: 'images/11.jpg',
     id: 'js',
     title: 'Moje własne Trello.',
     links: [
