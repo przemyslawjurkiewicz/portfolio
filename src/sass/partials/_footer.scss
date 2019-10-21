@@ -1,0 +1,18 @@
+.footer {
+  background: linear-gradient(90deg, $grey-light 19px, transparent 1%) center,
+    linear-gradient($grey-light 19px, transparent 1%) center $color-primary;
+  background-size: 20px 20px;
+  margin: 0;
+  padding: 0;
+  @include flex-center;
+  flex-direction: column;
+  flex-basis: 100%;
+
+  &__text {
+    align-self: flex-start;
+    margin: 5%;
+    font-size: $normal-font-size;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+}
