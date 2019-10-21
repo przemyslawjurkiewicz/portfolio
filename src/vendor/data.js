@@ -48,10 +48,6 @@ export const Carts = [
       {
         icon: 'link',
         link: 'http://miodowyraj.info.pl/'
-      },
-      {
-        icon: 'github',
-        link: 'http://beautyandgo.pl/'
       }
     ],
     description: 'Strona dla znajomych pszczelarzy. Nauka Bootstrapa.',
@@ -340,6 +336,23 @@ export const Carts = [
     ],
     description: 'Wyszukiwarka Gifów, Api Giphy.',
     logo: ['images/react.gif']
+  },
+  {
+    image: 'images/20.jpg',
+    id: 'html',
+    title: 'Portfolio',
+    links: [
+      {
+        icon: 'link',
+        link: 'https://przemyslawjurkiewicz.github.io/portfolio/'
+      },
+      {
+        icon: 'github',
+        link: 'https://github.com/przemyslawjurkiewicz/portfolio'
+      }
+    ],
+    description: 'Ta strona :)',
+    logo: ['images/js.gif', 'images/html.gif', 'images/sass.gif']
   },
   {
     id: 'other',
