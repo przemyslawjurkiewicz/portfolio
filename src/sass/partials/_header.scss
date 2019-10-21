@@ -94,7 +94,9 @@
 }
 
 .hero {
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  //height: calc(var(--vh, 1vh) * 100);
   @include flex-center;
   flex-direction: column;
   background: linear-gradient(90deg, $grey-light 19px, transparent 1%) center,
