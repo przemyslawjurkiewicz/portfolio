@@ -1,4 +1,4 @@
-import { Carts, Groups } from '../vendor/dane';
+import { Carts, Groups } from '../vendor/data';
 import WOW from 'wow.js';
 
 // Wow.js init
@@ -97,6 +97,7 @@ menuButtons.map(element =>
 
 // Click on first button in menu.
 document.getElementsByClassName('portfolio__button')[0].click();
+document.getElementsByClassName('portfolio__button')[0].focus();
 
 // Gallery slider
 const showSlides = n => {
