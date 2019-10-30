@@ -8,11 +8,9 @@ new WOW({
   resetAnimation: true
 }).init();
 
-// We listen to the resize event
+// Reload on resize
 window.addEventListener('resize', () => {
-  // Then we set the value in the --vh custom property to the root of the document
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  location.reload();
 });
 
 // Navigation bar change when scroll
@@ -26,7 +24,7 @@ if (
 ) {
   document.querySelector('.navigation').classList.remove('navigation--hidden');
 }
-// If not change when sroll
+// If not mobile change when sroll
 else {
   window.onscroll = () => {
     let currentScrollPos = window.pageYOffset;
@@ -82,22 +80,28 @@ function generateTemplate(name, data, basicElement) {
 
 // Portfolio menu swicher
 const menuButtons = [...document.getElementsByClassName('portfolio__button')];
+const portfolioSections = [...document.getElementsByClassName('section')];
+
 const portfolioToggle = id => {
-  let sections = [...document.getElementsByClassName('section')];
-  sections.map(section =>
+  portfolioSections.map(section =>
     section.id === id
       ? section.classList.add('section--active')
       : section.classList.remove('section--active')
   );
+  menuButtons.map(button =>
+    button.id === id
+      ? button.classList.add('button--active')
+      : button.classList.remove('button--active')
+  );
 };
 
-menuButtons.map(element =>
-  element.addEventListener('click', () => portfolioToggle(element.id))
+menuButtons.map(button =>
+  button.addEventListener('click', () => portfolioToggle(button.id))
 );
 
-// Click on first button in menu.
-document.getElementsByClassName('portfolio__button')[0].click();
-document.getElementsByClassName('portfolio__button')[0].focus();
+// First section and first button visible on load.
+portfolioSections[0].classList.add('section--active');
+menuButtons[0].classList.add('button--active');
 
 // Gallery slider
 const showSlides = n => {
