@@ -22,16 +22,15 @@
   }
 
   &--active {
-    &:focus {
-      outline: 0;
-      background: inherit;
-      color: $color-primary;
-    }
+    outline: 0;
+    background: inherit;
+    color: $color-primary;
   }
 
   &__icon {
     padding: 5px 20px 0;
     font-size: $big-font-size;
+
     &--small {
       font-size: $normal-font-size;
       padding: 0 10px;
