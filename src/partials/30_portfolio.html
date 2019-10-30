@@ -4,15 +4,15 @@
   </svg>
   <h2 class="portfolio__header">PORTFOLIO</h2>
   <div id="portfolio-menu" class="portfolio__menu"></div>
-  <div id="portfolio-wrapper" class="portfolio__wrapper col-sm-12 col-md-12 col-lg-12"></div>
-  <svg class="triangle triangle--bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <div id="portfolio-wrapper" class="portfolio__wrapper col-sm-12"></div>
+  <svg class="triangle triangle--bottom" id="cv" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
     <polygon points="0,100 100,0 100,100" />
   </svg>
 </section>
 
 <!-- TEMPLATES -->
 <script id="portfolio-menu-template" type="x-tmpl-mustache">
-  <button  id={{ title }} class="button button--active portfolio__button">{{title}}</button>
+  <button  id={{ title }} class="button portfolio__button">{{title}}</button>
 </script>
 
 <script id="portfolio-section-template" type="x-tmpl-mustache">
@@ -20,7 +20,7 @@
     <hr class="section__horizontal-line">
     <h3 class="section__header">{{title}}</h3>
     <p class="section__text col-sm-12 col-lg-6">{{description}}</p>
-    <div id={{ id }} class="section__carts-wrapper col-md-12 col-sm-12 col-lg-12 "></div>
+    <div id={{ id }} class="section__carts-wrapper col-sm-12 col-lg-12"></div>
   </div>
 </script>
 
@@ -36,7 +36,7 @@
 </script>
 
 <script id="portfolio-gallery-template" type="x-tmpl-mustache">
-  <div class="gallery col-sm-12 col-lg-12">
+  <div class="gallery col-sm-12">
     {{#images}}
        <div class="gallery__slide">
           <img class="gallery__image" src={{image}}>
