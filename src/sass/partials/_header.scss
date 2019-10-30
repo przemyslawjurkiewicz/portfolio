@@ -86,6 +86,7 @@
   }
 
   &__icon {
+    padding: 2px;
     font-size: $big-font-size;
     color: $light;
     cursor: pointer;
@@ -94,8 +95,8 @@
 }
 
 .hero {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  height: -webkit-fill-available;
   //height: calc(var(--vh, 1vh) * 100);
   @include flex-center;
   flex-direction: column;
@@ -105,11 +106,12 @@
   font-size: $medium-font-size;
 
   &__down {
-    font-size: 40px;
+    font-size: $verybig-font-size;
     position: absolute;
     bottom: 5px;
-    animation: moveDown 500ms linear infinite;
+    animation: moveDown 1s linear infinite;
     z-index: 2;
+    -webkit-animation: moveDown 1s linear infinite;
 
     &:hover {
       cursor: pointer;
@@ -123,14 +125,15 @@
   &__logo {
     padding: 0;
     margin: 0;
-    font-size: 150px;
+    font-size: 10em;
     fill: $light;
   }
 
   &__header {
+    font-size: $verybig-font-size;
     text-align: center;
     text-transform: uppercase;
-    padding: 10px 0 10px;
+    padding: 5px 0;
     color: $light;
 
     &--second {
@@ -163,12 +166,16 @@
 }
 
 @keyframes moveDown {
-  from {
-    bottom: 13vh;
+  0% {
+    bottom: 11vh;
   }
 
-  to {
-    bottom: 10vh;
+  50% {
+    bottom: 8vh;
+  }
+
+  100% {
+    bottom: 11vh;
   }
 }
 
@@ -176,12 +183,13 @@
   .hero {
     font-size: $small-font-size;
 
-    &__logo {
-      font-size: 100px;
-    }
+   // &__logo {
+   //  font-size: 10em;
+   // }
 
     &__header {
       padding: 0;
+      margin: 0;
     }
 
     &__down {
@@ -194,7 +202,7 @@
   .navigation {
     bottom: 0;
     top: auto;
-    height: 5%;
+    padding: 0;
 
     &__item {
       display: none;

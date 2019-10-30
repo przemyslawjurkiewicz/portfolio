@@ -110,7 +110,7 @@
     width: 100%;
     animation: Increase;
     animation-fill-mode: forwards;
-    animation-duration: 0.4s;
+    animation-duration: 0.5s;
     background: rgba(202, 219, 238, 0.9);
     position: absolute;
     flex-direction: column;
@@ -145,11 +145,13 @@
 
   @keyframes Increase {
     from {
-      height: 0;
-    }
+      //left: 100%;
+      opacity: 0;
+     }
 
     to {
-      height: 100%;
+     // left: 0;
+      opacity: 1;
     }
   }
 }
