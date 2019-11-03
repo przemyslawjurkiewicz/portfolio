@@ -10,7 +10,7 @@ new WOW({
 
 // Reload on resize
 window.addEventListener('resize', () => {
-  location.reload();
+  window.location.reload();
 });
 
 // Navigation bar change when scroll
