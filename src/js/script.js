@@ -8,10 +8,6 @@ new WOW({
   resetAnimation: true
 }).init();
 
-// Reload on resize
-window.addEventListener('resize', () => {
-  window.location.reload();
-});
 
 // Navigation bar change when scroll
 let hero = document.querySelector('.hero');
