@@ -112,6 +112,7 @@
     animation: moveDown 1s linear infinite;
     z-index: 2;
     -webkit-animation: moveDown 1s linear infinite;
+    
 
     &:hover {
       cursor: pointer;
@@ -137,15 +138,17 @@
     color: $light;
 
     &--second {
-      color: $color-primary;
+      color: $color-secondary;
       font-size: $small-font-size;
 
       &:before {
         content: " // ";
+        color: $color-secondary;
       }
 
       &:after {
         content: " // ";
+        color: $color-secondary;
       }
     }
   }
